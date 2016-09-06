@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+        <html lang="en">
+<head>
+    <title>PRG 147 10 DOM Events</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script>alert("Press ok to except terms and conditions of PRG-147 Events")</script>
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="header">
+            <p>Sparta Elroy And The Four Trails Across Wisconsin</p>
+        </div>
+            <p>Every year Brian, Jodey, and myself go one a trip. This was the 4 Trails and Sparta Elory trail<br>
+               that runs across the middle region of Wisconsin. The trip was 210 miles in three days. <br>
+                We carried all of our gear. Ride, camp, then ride again was the theme of our adventure.<br>
+            </p>
+        <div class="button_box">
+            <p> Click the button for date and time.</p>
+
+            <button type="button" onclick="document.getElementById('time').innerHTML = Date()">Click me!!!!!</button>
+            <p id="time"></p>
+        </div>
+        <div  class="color_box" id="colorchange">
+            <button type="button" onclick="document.getElementById('colorchange').style.background='purple'">Push For A Colorful Suprise</button>
+        </div>
+        <div class="leftmenu">
+            <a href="#big"><img src="images/train_bridge.jpg" alt="Train Bridge" height="125" title="Train Bridge"  onclick="change01()"></a><br>
+            <p> Click on photo</p>
+            <a href="#big"><img src="images/neil_in_camp.jpg" alt="Camp" height="125" title="Camp"  onclick="change02()"></a><br>
+            <p> Click on photo</p>
+            <a href="#big"><img src="images/Jodey_bike.jpg" alt="Bikes" height="125" title="Bikes"  ondblclick="change03()"></a><br>
+            <p> Double Click on Photo</p>
+            <a href="#big"><img src="images/rain.gjp.jpg" alt="Rain" height="125" title="Rain"  onmouseover="change04()"></a><br>
+            <p> Mouse Over Photo</p>
+
+            <img src="images/rain.gjp.jpg" alt="Rain" height="125" title="Rain" onmouseleave="change05()">
+            <p> Mouse off Photo</p>
+            <p> Put your insertion point in the box<br>
+                What ever you do, DONT press the Shift key</p>
+            <input type="text" onkeydown="isKeyPressed(event)">
+            <p id="shift"></p>
+            <p> Put your insertion point in the box and press any key.</p>
+            <input type="text" onkeypress="myFunction()">
+
+        </div>
+        <div class="right">
+            <img id="big" src="images/train_bridge.jpg" alt="Train Bridge">
+            <p id="content"></p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+        <script>alert("The page has loaded")</script>
+
+
+
+
+</body>
+</html>
